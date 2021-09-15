@@ -7,23 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F6B3E9026F1D61F005BBC09 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6B3E8F26F1D61F005BBC09 /* Authorization.swift */; };
+		2F6B3E9226F1DADF005BBC09 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6B3E9126F1DADF005BBC09 /* LoginViewController.swift */; };
+		2F6B3EB426F1F732005BBC09 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6B3EB326F1F732005BBC09 /* MainViewController.swift */; };
+		2F6B3EB626F2020B005BBC09 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6B3EB526F2020B005BBC09 /* TabBarViewController.swift */; };
+		2F6B3EB826F21325005BBC09 /* Feelings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6B3EB726F21325005BBC09 /* Feelings.swift */; };
+		2F6B3EBB26F21A56005BBC09 /* FeelingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6B3EBA26F21A56005BBC09 /* FeelingCollectionViewCell.swift */; };
+		2F6B3EBD26F21F01005BBC09 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6B3EBC26F21F01005BBC09 /* Quotes.swift */; };
+		2F6B3EBF26F22360005BBC09 /* QuotesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6B3EBE26F22360005BBC09 /* QuotesCollectionViewCell.swift */; };
+		2F6B3EC126F229E7005BBC09 /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6B3EC026F229E7005BBC09 /* ProfilViewController.swift */; };
 		2F787FB026F0BE3E00166E0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F787FAF26F0BE3E00166E0C /* AppDelegate.swift */; };
 		2F787FB226F0BE3E00166E0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F787FB126F0BE3E00166E0C /* SceneDelegate.swift */; };
-		2F787FB426F0BE3E00166E0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F787FB326F0BE3E00166E0C /* ViewController.swift */; };
 		2F787FB726F0BE3E00166E0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F787FB526F0BE3E00166E0C /* Main.storyboard */; };
 		2F787FB926F0BE4000166E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F787FB826F0BE4000166E0C /* Assets.xcassets */; };
 		2F787FBC26F0BE4000166E0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F787FBA26F0BE4000166E0C /* LaunchScreen.storyboard */; };
+		2F787FC726F0D6C900166E0C /* OneboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F787FC626F0D6C900166E0C /* OneboardingViewController.swift */; };
+		2F787FCA26F0D83000166E0C /* Alegreya in Resources */ = {isa = PBXBuildFile; fileRef = 2F787FC926F0D83000166E0C /* Alegreya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F6B3E8F26F1D61F005BBC09 /* Authorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
+		2F6B3E9126F1DADF005BBC09 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2F6B3EB326F1F732005BBC09 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2F6B3EB526F2020B005BBC09 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		2F6B3EB726F21325005BBC09 /* Feelings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feelings.swift; sourceTree = "<group>"; };
+		2F6B3EBA26F21A56005BBC09 /* FeelingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingCollectionViewCell.swift; sourceTree = "<group>"; };
+		2F6B3EBC26F21F01005BBC09 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
+		2F6B3EBE26F22360005BBC09 /* QuotesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesCollectionViewCell.swift; sourceTree = "<group>"; };
+		2F6B3EC026F229E7005BBC09 /* ProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
 		2F787FAC26F0BE3E00166E0C /* Otbbor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Otbbor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F787FAF26F0BE3E00166E0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F787FB126F0BE3E00166E0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2F787FB326F0BE3E00166E0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2F787FB626F0BE3E00166E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F787FB826F0BE4000166E0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F787FBB26F0BE4000166E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F787FBD26F0BE4000166E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F787FC626F0D6C900166E0C /* OneboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneboardingViewController.swift; sourceTree = "<group>"; };
+		2F787FC926F0D83000166E0C /* Alegreya */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Alegreya; path = ../../../Downloads/Alegreya; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F6B3EB926F21A0D005BBC09 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2F6B3EBA26F21A56005BBC09 /* FeelingCollectionViewCell.swift */,
+				2F6B3EBE26F22360005BBC09 /* QuotesCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		2F787FA326F0BE3E00166E0C = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +85,48 @@
 		2F787FAE26F0BE3E00166E0C /* Otbbor */ = {
 			isa = PBXGroup;
 			children = (
+				2F787FC926F0D83000166E0C /* Alegreya */,
+				2F787FC526F0D67700166E0C /* Controllers */,
+				2F787FC426F0D67100166E0C /* Views */,
+				2F787FC326F0D66500166E0C /* Models */,
 				2F787FAF26F0BE3E00166E0C /* AppDelegate.swift */,
 				2F787FB126F0BE3E00166E0C /* SceneDelegate.swift */,
-				2F787FB326F0BE3E00166E0C /* ViewController.swift */,
-				2F787FB526F0BE3E00166E0C /* Main.storyboard */,
 				2F787FB826F0BE4000166E0C /* Assets.xcassets */,
-				2F787FBA26F0BE4000166E0C /* LaunchScreen.storyboard */,
 				2F787FBD26F0BE4000166E0C /* Info.plist */,
 			);
 			path = Otbbor;
+			sourceTree = "<group>";
+		};
+		2F787FC326F0D66500166E0C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F6B3E8F26F1D61F005BBC09 /* Authorization.swift */,
+				2F6B3EB726F21325005BBC09 /* Feelings.swift */,
+				2F6B3EBC26F21F01005BBC09 /* Quotes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F787FC426F0D67100166E0C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F6B3EB926F21A0D005BBC09 /* Cells */,
+				2F787FB526F0BE3E00166E0C /* Main.storyboard */,
+				2F787FBA26F0BE4000166E0C /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2F787FC526F0D67700166E0C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F787FC626F0D6C900166E0C /* OneboardingViewController.swift */,
+				2F6B3E9126F1DADF005BBC09 /* LoginViewController.swift */,
+				2F6B3EB326F1F732005BBC09 /* MainViewController.swift */,
+				2F6B3EB526F2020B005BBC09 /* TabBarViewController.swift */,
+				2F6B3EC026F229E7005BBC09 /* ProfilViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +188,7 @@
 			files = (
 				2F787FBC26F0BE4000166E0C /* LaunchScreen.storyboard in Resources */,
 				2F787FB926F0BE4000166E0C /* Assets.xcassets in Resources */,
+				2F787FCA26F0D83000166E0C /* Alegreya in Resources */,
 				2F787FB726F0BE3E00166E0C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +200,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F787FB426F0BE3E00166E0C /* ViewController.swift in Sources */,
+				2F6B3EC126F229E7005BBC09 /* ProfilViewController.swift in Sources */,
+				2F6B3EBF26F22360005BBC09 /* QuotesCollectionViewCell.swift in Sources */,
+				2F787FC726F0D6C900166E0C /* OneboardingViewController.swift in Sources */,
+				2F6B3E9026F1D61F005BBC09 /* Authorization.swift in Sources */,
+				2F6B3EBD26F21F01005BBC09 /* Quotes.swift in Sources */,
 				2F787FB026F0BE3E00166E0C /* AppDelegate.swift in Sources */,
+				2F6B3EB426F1F732005BBC09 /* MainViewController.swift in Sources */,
+				2F6B3EB626F2020B005BBC09 /* TabBarViewController.swift in Sources */,
+				2F6B3E9226F1DADF005BBC09 /* LoginViewController.swift in Sources */,
+				2F6B3EB826F21325005BBC09 /* Feelings.swift in Sources */,
+				2F6B3EBB26F21A56005BBC09 /* FeelingCollectionViewCell.swift in Sources */,
 				2F787FB226F0BE3E00166E0C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
