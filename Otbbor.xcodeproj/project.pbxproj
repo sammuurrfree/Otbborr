@@ -22,7 +22,9 @@
 		2F787FB926F0BE4000166E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F787FB826F0BE4000166E0C /* Assets.xcassets */; };
 		2F787FBC26F0BE4000166E0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F787FBA26F0BE4000166E0C /* LaunchScreen.storyboard */; };
 		2F787FC726F0D6C900166E0C /* OneboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F787FC626F0D6C900166E0C /* OneboardingViewController.swift */; };
-		2F787FCA26F0D83000166E0C /* Alegreya in Resources */ = {isa = PBXBuildFile; fileRef = 2F787FC926F0D83000166E0C /* Alegreya */; };
+		8E4B8CEA26F268AA00CEF263 /* Alegreya in Resources */ = {isa = PBXBuildFile; fileRef = 8E4B8CE926F268A900CEF263 /* Alegreya */; };
+		8E4B8CEC26F26D6600CEF263 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4B8CEB26F26D6600CEF263 /* ImageCollectionViewCell.swift */; };
+		8E4B8CEE26F2756300CEF263 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4B8CED26F2756300CEF263 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +45,9 @@
 		2F787FBB26F0BE4000166E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F787FBD26F0BE4000166E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F787FC626F0D6C900166E0C /* OneboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneboardingViewController.swift; sourceTree = "<group>"; };
-		2F787FC926F0D83000166E0C /* Alegreya */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Alegreya; path = ../../../Downloads/Alegreya; sourceTree = "<group>"; };
+		8E4B8CE926F268A900CEF263 /* Alegreya */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Alegreya; sourceTree = "<group>"; };
+		8E4B8CEB26F26D6600CEF263 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		8E4B8CED26F2756300CEF263 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			children = (
 				2F6B3EBA26F21A56005BBC09 /* FeelingCollectionViewCell.swift */,
 				2F6B3EBE26F22360005BBC09 /* QuotesCollectionViewCell.swift */,
+				8E4B8CEB26F26D6600CEF263 /* ImageCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -85,7 +90,7 @@
 		2F787FAE26F0BE3E00166E0C /* Otbbor */ = {
 			isa = PBXGroup;
 			children = (
-				2F787FC926F0D83000166E0C /* Alegreya */,
+				8E4B8CE926F268A900CEF263 /* Alegreya */,
 				2F787FC526F0D67700166E0C /* Controllers */,
 				2F787FC426F0D67100166E0C /* Views */,
 				2F787FC326F0D66500166E0C /* Models */,
@@ -125,6 +130,7 @@
 				2F6B3EB326F1F732005BBC09 /* MainViewController.swift */,
 				2F6B3EB526F2020B005BBC09 /* TabBarViewController.swift */,
 				2F6B3EC026F229E7005BBC09 /* ProfilViewController.swift */,
+				8E4B8CED26F2756300CEF263 /* ImageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -188,8 +194,8 @@
 			files = (
 				2F787FBC26F0BE4000166E0C /* LaunchScreen.storyboard in Resources */,
 				2F787FB926F0BE4000166E0C /* Assets.xcassets in Resources */,
-				2F787FCA26F0D83000166E0C /* Alegreya in Resources */,
 				2F787FB726F0BE3E00166E0C /* Main.storyboard in Resources */,
+				8E4B8CEA26F268AA00CEF263 /* Alegreya in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +208,7 @@
 			files = (
 				2F6B3EC126F229E7005BBC09 /* ProfilViewController.swift in Sources */,
 				2F6B3EBF26F22360005BBC09 /* QuotesCollectionViewCell.swift in Sources */,
+				8E4B8CEC26F26D6600CEF263 /* ImageCollectionViewCell.swift in Sources */,
 				2F787FC726F0D6C900166E0C /* OneboardingViewController.swift in Sources */,
 				2F6B3E9026F1D61F005BBC09 /* Authorization.swift in Sources */,
 				2F6B3EBD26F21F01005BBC09 /* Quotes.swift in Sources */,
@@ -209,6 +216,7 @@
 				2F6B3EB426F1F732005BBC09 /* MainViewController.swift in Sources */,
 				2F6B3EB626F2020B005BBC09 /* TabBarViewController.swift in Sources */,
 				2F6B3E9226F1DADF005BBC09 /* LoginViewController.swift in Sources */,
+				8E4B8CEE26F2756300CEF263 /* ImageViewController.swift in Sources */,
 				2F6B3EB826F21325005BBC09 /* Feelings.swift in Sources */,
 				2F6B3EBB26F21A56005BBC09 /* FeelingCollectionViewCell.swift in Sources */,
 				2F787FB226F0BE3E00166E0C /* SceneDelegate.swift in Sources */,

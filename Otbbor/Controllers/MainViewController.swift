@@ -10,8 +10,7 @@ import UIKit
 class MainViewController: UIViewController, UICollectionViewDataSource{
     
     
-  
-
+    @IBOutlet var collectionview1: UICollectionView!
     
     var feelingsData = Feelings().getFeelings()?.data
     var quotesData = Quotes().getFeelings()?.data
@@ -22,9 +21,8 @@ class MainViewController: UIViewController, UICollectionViewDataSource{
     }
     
     
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if collectionView == collectionView{
+        if collectionView == collectionview1{
             return feelingsData?.count ?? 0
         }else{
             return quotesData?.count ?? 0
@@ -33,7 +31,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource{
         
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        if collectionView == collectionView{
+        if collectionView == collectionview1{
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeelingCollectionViewCell", for: indexPath) as! FeelingCollectionViewCell
             cell.title.text =  feelingsData![indexPath.item].title
