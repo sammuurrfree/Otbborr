@@ -10,6 +10,8 @@ import UIKit
 class MainViewController: UIViewController, UICollectionViewDataSource{
     
     
+    @IBOutlet weak var userTitle: UILabel!
+    @IBOutlet weak var userImage: UIImageView!
     @IBOutlet var collectionview1: UICollectionView!
     
     var feelingsData = Feelings().getFeelings()?.data
@@ -17,6 +19,15 @@ class MainViewController: UIViewController, UICollectionViewDataSource{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if globalUser != nil{
+            userTitle.text = "С возвращением, \(globalUser!.nickName!)!"
+            userImage.image = UIImage(data:try! Data(contentsOf: URL(string: globalUser!.avatar!)!))
+        }
+        
+        feelingsData?.sort(by: { a, b in
+            a.position < b.position
+        })
         
     }
     

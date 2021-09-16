@@ -7,6 +7,8 @@
 
 import UIKit
 
+var globalUser:AuthModel? = nil
+
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
@@ -43,9 +45,15 @@ class LoginViewController: UIViewController {
                 self.present(alert, animated: true)
             }else{
                 let vc = storyboard?.instantiateViewController(withIdentifier: "main")
+                globalUser = requests
                 
                 present(vc!, animated: true)
             }
+        }else{
+            let alert = UIAlertController(title: "Error", message: "Заполните все поля", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "ok", style: .default))
+            self.present(alert, animated: true)
         }
         
         
