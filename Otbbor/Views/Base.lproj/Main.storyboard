@@ -319,7 +319,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UzR-oX-MC3">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UzR-oX-MC3">
                                 <rect key="frame" x="28" y="365" width="360" height="448"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Puw-70-Df7">
@@ -432,6 +432,11 @@
                                             <constraint firstAttribute="height" constant="150" id="Jzb-dD-Iuz"/>
                                             <constraint firstAttribute="width" constant="150" id="lFg-YG-Hvm"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="75"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Эмиль" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boX-PX-ONH">
                                         <rect key="frame" x="0.0" y="158" width="150" height="30"/>
@@ -462,6 +467,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="User 1" id="WAi-cw-2cw"/>
+                    <connections>
+                        <outlet property="collectionView" destination="UzR-oX-MC3" id="gK4-tK-QSd"/>
+                        <outlet property="image" destination="QrQ-YB-gEd" id="UmM-s8-eoD"/>
+                        <outlet property="name" destination="boX-PX-ONH" id="bpi-W2-FdK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="80J-61-iao" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -513,7 +523,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="0kG-Xx-Lqp">
                                 <rect key="frame" x="26" y="132" width="374" height="73"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="С возвращением, Эмиль!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYF-9n-eJ0">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="С возвращением, Quest!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYF-9n-eJ0">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="Cuc-Vj-sj5"/>
@@ -960,6 +970,9 @@
                                         <state key="normal" title="удалить">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="deleteImage:" destination="bw8-XZ-GNH" eventType="touchUpInside" id="NXr-Vr-0P4"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cw-eF-41h">
                                         <rect key="frame" x="174" y="0.0" width="80" height="40"/>
@@ -997,7 +1010,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="ejj-F4-HMd"/>
-        <segue reference="q4H-NU-BQt"/>
+        <segue reference="6Dy-O1-QJb"/>
         <segue reference="P6Q-Vk-gOq"/>
         <segue reference="ggR-vr-53l"/>
     </inferredMetricsTieBreakers>

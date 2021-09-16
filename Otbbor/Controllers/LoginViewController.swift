@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Foundation
 
 var globalUser:AuthModel? = nil
 
@@ -35,28 +36,53 @@ class LoginViewController: UIViewController {
         let email = emailTextField.text
         let password = passwordTextField.text
         
-        if emailTextField.hasText && passwordTextField.hasText{
-            let requests = Authorization().auth(login: email!, password: password!)
-            
-            if requests.error != nil{
-                let alert = UIAlertController(title: "Error", message: "\(requests.error!)", preferredStyle: .alert)
+        if Reachability.isConnectedToNetwork() {
+            if emailTextField.hasText && passwordTextField.hasText{
+                
+                var flag = false
+                for charakter in email!{
+                    if charakter == "@"{
+                        flag = true
+                    }
+                }
+                if flag {
+                    let requests = Authorization().auth(login: email!, password: password!)
+                    if requests != nil{
+                        if requests!.error != nil{
+                            let alert = UIAlertController(title: "Error", message: "\(requests!.error!)", preferredStyle: .alert)
+                            
+                            alert.addAction(UIAlertAction(title: "ok", style: .default))
+                            self.present(alert, animated: true)
+                        }else{
+                            let vc = storyboard?.instantiateViewController(withIdentifier: "main")
+                            globalUser = requests
+                            
+                            present(vc!, animated: true)
+                        }
+                    }else{
+                        let alert = UIAlertController(title: "Error", message: "Ошибка подключения к серверу", preferredStyle: .alert)
+                        
+                        alert.addAction(UIAlertAction(title: "ok", style: .default))
+                        self.present(alert, animated: true)
+                    }
+                }else{
+                    let alert = UIAlertController(title: "Error", message: "В поле EMAIL нет '@' ", preferredStyle: .alert)
+                    
+                    alert.addAction(UIAlertAction(title: "ok", style: .default))
+                    self.present(alert, animated: true)
+                }
+            }else{
+                let alert = UIAlertController(title: "Error", message: "Заполните все поля", preferredStyle: .alert)
                 
                 alert.addAction(UIAlertAction(title: "ok", style: .default))
                 self.present(alert, animated: true)
-            }else{
-                let vc = storyboard?.instantiateViewController(withIdentifier: "main")
-                globalUser = requests
-                
-                present(vc!, animated: true)
             }
         }else{
-            let alert = UIAlertController(title: "Error", message: "Заполните все поля", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Error conection", message: "Ошибка подключения к серверу", preferredStyle: .alert)
             
             alert.addAction(UIAlertAction(title: "ok", style: .default))
             self.present(alert, animated: true)
         }
-        
-        
     }
     
 }

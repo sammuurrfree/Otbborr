@@ -31,6 +31,15 @@ class MainViewController: UIViewController, UICollectionViewDataSource{
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        if !Reachability.isConnectedToNetwork() {
+            let alert = UIAlertController(title: "Error conection", message: "Ошибка подключения к серверу", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "ok", style: .default))
+            self.present(alert, animated: true)
+        }
+    }
+
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == collectionview1{

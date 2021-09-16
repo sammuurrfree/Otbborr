@@ -23,7 +23,7 @@ struct AuthModel: Decodable {
 class Authorization {
     
     
-    func auth(login: String, password: String) -> AuthModel {
+    func auth(login: String, password: String) -> AuthModel? {
         
         let semaphore = DispatchSemaphore (value: 0)
         var returnData: AuthModel? = nil
@@ -31,7 +31,7 @@ class Authorization {
         let parameters = "{\n    \"email\": \"\(login)\",\n    \"password\":\"\(password)\"\n}"
         let postData = parameters.data(using: .utf8)
 
-        var request = URLRequest(url: URL(string: "http://mskko2021.mad.hakta.pro/api/user/login")!,timeoutInterval: Double.infinity)
+        var request = URLRequest(url: URL(string: "http://mskko2021.mad.hakta.pro/api/user/login")!,timeoutInterval: 3.0)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 
         request.httpMethod = "POST"
@@ -49,7 +49,7 @@ class Authorization {
         task.resume()
         semaphore.wait()
         
-        return returnData!
+        return returnData
         
     }
     
